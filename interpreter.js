@@ -120,7 +120,7 @@ var TestRun = function(script, name, initialVars) {
   this.success = true;
   this.lastError = null;
   this.executorFactories = [new DefaultExecutorFactory()];
-  this.quitDriverAfterUse = true;
+  this.quitDriverAfterUse = false;
   this.shareStateFromPrevTestRun = false;
 };
 
