@@ -111,7 +111,10 @@ var TestRun = function(script, name, initialVars) {
   this.wd = null;
   this.silencePrints = false;
   this.name = name || 'Untitled';
-  this.browserOptions = { 'browserName': 'firefox' };
+  this.browserOptions = {
+    'browserName': 'firefox',
+    'general.useragent.override': 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25'
+  };
   this.driverOptions = {};
   this.listener = null;
   this.success = true;
