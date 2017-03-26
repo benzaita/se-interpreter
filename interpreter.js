@@ -150,7 +150,7 @@ TestRun.prototype.start = function(callback, webDriverToUse) {
           if (testRun.listener && testRun.listener.startTestRun) {
             testRun.listener.startTestRun(testRun, info2);
           }
-          callback(info2);
+          testRun.wd.setWindowSize(320, 529, () => callback(info2));
         });
       }
     });
